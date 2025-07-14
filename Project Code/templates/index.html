@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Password Strength Classifier</title>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+        <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+            
+        <!-- Website Title -->
+      
+    	<div class="container">
+            
+            <h1 class='container-heading'> <span class="heading_font">Password Strength Classifier</span></h1>
+            <div class='description'>
+    			<p>Enhancing Cybersecurity: Leveraging Machine Learning for Password Strength Classification</p>
+    		</div>
+    	</div>
+
+        <!-- Text Area -->
+    	<div class="ml-container">
+            
+            <label>Enter Your Password to Check</label><br>
+            <br>
+    		<form action="{{ url_for('predict') }}" method="POST">
+                <input class="form-input" type="text" name="password" placeholder="" required><br>
+                
+
+        		<input type="submit" class="my-cta-button" value="Predict">
+        	</form>
+            
+    	</div>
+
+        <!-- Footer -->
+       <div class='footer'>
+            <p class='footer-description'>Jatin Yadav B. Tech. CE JC Bose University of Science and Technology (YMCA) Faridabad</p>   
+            <div class="contact">
+               <a target="_blank" href="https://github.com/meetraojatin"><i class="fab fa-github fa-lg contact-icon"></i></a>
+              <a target="_blank" href="https://linkedin.com/in/jatin-yadav-418b2a254/"><i class="fab fa-linkedin fa-lg contact-icon"></i></a> 
+           </div>
+           
+       </div>
+
+    </body>
+</html>
